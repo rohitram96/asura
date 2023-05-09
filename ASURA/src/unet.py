@@ -115,7 +115,7 @@ class UNet() :
 
         outputs = layers.Conv2D(num_class, (1, 1), activation='sigmoid') (c9)
 
-        self.model = models.Model(inputs = inputs, output = outputs)
+        self.model = models.Model(inputs = inputs, outputs = outputs)
         self.model.compile(optimizer='adam', loss='binary_crossentropy', metrics=[mean_iou])
 
     def create_model_filename(self, dataset, model) :

@@ -92,7 +92,6 @@ def evaluateOutput(datasets):
         dataset = src.util.ImageDataset(datasetPath, dataset_name = names, k_fold='0', training = True)
         ds[names] = dataset
 
-
     root_folder = './output/'
     for ds_folder in os.listdir(root_folder) :
         if ds_folder not in ds : 
